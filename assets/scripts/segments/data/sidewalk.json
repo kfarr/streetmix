@@ -1,0 +1,96 @@
+{
+  "sidewalk": {
+    "name": "Sidewalk",
+    "owner": "SEGMENT_OWNER_PEDESTRIAN",
+    "zIndex": 2,
+    "defaultWidth": 6,
+    "needRandSeed": true,
+    "variants": ["sidewalk-density"],
+    "details": {
+      "dense": {
+        "minWidth": 6,
+        "graphics": {
+          "center": {
+            "tileset": 1,
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "offsetX": -1,
+            "height": 1
+          },
+          "repeat": {
+            "tileset": 2,
+            "x": 110,
+            "y": 53,
+            "width": 9,
+            "height": 5,
+            "offsetY": 10
+          }
+        }
+      },
+      "normal": {
+        "minWidth": 6,
+        "graphics": {
+          "center": {
+            "tileset": 1,
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "offsetX": -1,
+            "height": 1
+          },
+          "repeat": {
+            "tileset": 2,
+            "x": 110,
+            "y": 53,
+            "width": 9,
+            "height": 5,
+            "offsetY": 10
+          }
+        }
+      },
+      "sparse": {
+        "minWidth": 6,
+        "graphics": {
+          "center": {
+            "tileset": 1,
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "offsetX": -1,
+            "height": 1
+          },
+          "repeat": {
+            "tileset": 2,
+            "x": 110,
+            "y": 53,
+            "width": 9,
+            "height": 5,
+            "offsetY": 10
+          }
+        }
+      },
+      "empty": {
+        "minWidth": 6,
+        "graphics": {
+          "center": {
+            "tileset": 1,
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "offsetX": -1,
+            "height": 1
+          },
+          "repeat": {
+            "tileset": 2,
+            "x": 110,
+            "y": 53,
+            "width": 9,
+            "height": 5,
+            "offsetY": 10
+          }
+        }
+      }
+    }
+  }
+}

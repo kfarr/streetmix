@@ -187,6 +187,14 @@ How to fill in the data for a segment:
 
 */
 
+import sidewalk from './data/sidewalk.json'
+
+const data = [
+  sidewalk
+]
+
+window.SEGMENT_INFO = Object.assign({}, ...data)
+
 export const SEGMENT_INFO = {
   'sidewalk': {
     name: 'Sidewalk',
