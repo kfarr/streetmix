@@ -24,7 +24,7 @@ By participating in this project you agree to abide by its terms.
 
 We use the [GitHub issue tracker][issues] to track bugs and features
 in development. We also have [forums](http://forums.streetmix.net) for feedback
-and discussion. 
+and discussion.
 
 ### Bug reporting
 
@@ -140,7 +140,6 @@ You'll also need to set up the [MongoDB data directory](https://docs.mongodb.org
 
 Streetmix was not developed on a Windows platform, and testing is limited. We've been able to successfully stand up a local installation on 64-bit Windows 7-based Dell laptops for an event without Internet access. These instructions below will assume that the user has basic familiarity with Git, GitHub, and the Windows Terminal command line interface, and has administrative permissions to install software on the machine.
 
-
 ##### Installing core dependencies
 
 You may skip each of these steps if a fairly recent stable version is already present on the system.
@@ -164,6 +163,15 @@ You may additionally specify the name of the directory to install to, if you wis
     npm install
 
 3) Set up the MongoDB environment. [Follow the instructions under “Set up the MongoDB environment” from the MongoDB website.](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#run-mongodb)
+
+4) Make sure to add MongoDB binaries to your system path. Go to Control Panel > System > Advanced > Environment Variables > System Variables > find "Path" > Edit > Add `C:\Program Files\MongoDB\Server\3.4\bin`
+
+##### Running Windows Specific Notes:
+
+* In Streetmix package.json rename `prestart` script to `dbstart`
+* Open up two command prompt windows and navigate to the streetmix project root directory.
+* In the first type `npm run dbstart`
+* In the second type `npm start`
 
 #### On all systems
 
