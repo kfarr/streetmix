@@ -146,7 +146,8 @@ app.use(cookieParser())
 app.use(
   cookieSession({
     secret: process.env.COOKIE_SESSION_SECRET || 'seger handrail',
-    sameSite: 'strict'
+    sameSite: 'none',
+    secure: true
   })
 )
 
